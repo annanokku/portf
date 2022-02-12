@@ -1,31 +1,41 @@
+<!DOCTYPE html>
 <html>
-<body>
-<h1>anna</h1>
-<p>Feedback</p>
-<div class="container">
-  <form action="contact.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+  <head>
+  </head>
+  <body>
+  
+  <form class="form" method="post" action="contact.php">
+  
+    <label class="form-label" for="myName">Name*</label>
+    <input class="form-input" type="text" name="myName" id="myName" required="required">
+    
+    <label class="form-label" for="myEmail">E-mail*</label>
+    <input class="form-input" type="email" name="myEmail" id="myEmail" required="required">
+    
+    <label class="form-label" for="myPage">Select Page for Feedback</label>
+    <select class="form-input" size="1" name="myPage" id="myPage">
+      <option value="Select Page"> - Select Page - </option>
+      <option value="Home">Home Page</option>
+      <option value="Planning">Planning Page</option>
+      <option value="Wireframes">Wireframes Page</option>
+      <option value="Mockups">Mockups Page</option>
+      <option value="Graphics">Graphics Page</option>
+      <option value="Code vs Graphics">Code vs Graphics</option>
+      <option value="Fonts">Fonts Page</option>
+      <option value="Deliverables">Deliverables Page</option>
+      <option value="Style Guide">Style Guide</option>
+      <option value="Color Palette">Color Palette Page</option>
     </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
+    
+    <label class="form-label" for="mySubject">Subject</label>
+    <input class="form-input" type="text" name="mySubject" id="mySubject">
+      
+    <label class="form-label" for="mySuggestions">Suggestions*</label>
+    <textarea class="form-input" name="mySuggestions" id="mySuggestions" rows="5" cols="20" required="required"></textarea>
+      
+    <input class="form-button" type="submit" id="mySubmit" value="Submit" name="submit">
 
   </form>
-</div>
-</body>
+  
+  </body>
 </html>
-© 2022 GitHub, Inc.
-Terms
