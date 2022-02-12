@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+  
+  <form class="form" method="post" action="contact.php">
+  
+    <label class="form-label" for="myName">Name*</label>
+    <input class="form-input" type="text" name="myName" id="myName" required="required">
+    
+    <label class="form-label" for="myEmail">E-mail*</label>
+    <input class="form-input" type="email" name="myEmail" id="myEmail" required="required">
+    
+    <label class="form-label" for="myPage">Select Page for Feedback</label>
+    <select class="form-input" size="1" name="myPage" id="myPage">
+      <option value="Select Page"> - Select Page - </option>
+      <option value="Home">Home Page</option>
+      <option value="Planning">Planning Page</option>
+      <option value="Wireframes">Wireframes Page</option>
+      <option value="Mockups">Mockups Page</option>
+      <option value="Graphics">Graphics Page</option>
+      <option value="Code vs Graphics">Code vs Graphics</option>
+      <option value="Fonts">Fonts Page</option>
+      <option value="Deliverables">Deliverables Page</option>
+      <option value="Style Guide">Style Guide</option>
+      <option value="Color Palette">Color Palette Page</option>
+    </select>
+    
+    <label class="form-label" for="mySubject">Subject</label>
+    <input class="form-input" type="text" name="mySubject" id="mySubject">
+      
+    <label class="form-label" for="mySuggestions">Suggestions*</label>
+    <textarea class="form-input" name="mySuggestions" id="mySuggestions" rows="5" cols="20" required="required"></textarea>
+      
+    <input class="form-button" type="submit" id="mySubmit" value="Submit" name="submit">
+
+  </form>
+  
+  </body>
+</html>
